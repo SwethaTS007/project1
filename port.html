@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swetha's Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+
+      /* Background Image */
+      background-image: url('https://th.bing.com/th/id/OIP.gu8X1iyCXPREuzPSmj55-QHaEo?pid=ImgDet&w=474&h=296&rs=1');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Optional: Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    /* Header */
+    header {
+      background: #7b87ad;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 5px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #333;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 15px;
+    }
+
+    nav ul li a:hover {
+      background: hsl(225, 72%, 76%);
+      border-radius: 5px;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      background: #9fb2ea;
+      color: ;
+      text-align: center;
+    }
+
+    /* Skills Section */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skill-box {
+      text-align: center;
+      padding: 20px;
+      width: 150px;
+      border: 1px solid #828aba;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .skill-box:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #383460;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Swetha T S</h1>
+    <p>Aspiring Data Analyst | Engineering Student</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a second-year Computer Science Engineering student at K.S.R College of Engineering  with a passion for data analysis, problem-solving, and programming. 
+      My goal is to become a data analyst and contribute to data-driven decision-making.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Boxes -->
+      <div class="skill-box">Python</div>
+      <div class="skill-box">Basic_level - SQL</div>
+      <div class="skill-box">Microsoft Excel</div>
+      <div class="skill-box">Microsoft Word</div>
+      <div class="skill-box">Basic_level - HTML</div>
+      <div class="skill-box">Problem-Solving</div>
+      <div class="skill-box">Communication</div>
+      <div class="skill-box">Critical Thinking</div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.E. Computer Science</strong> - K.S.R College of Engineering (2nd Year, Expected 2027)</li>
+      <li><strong>CGPA</strong> -9.05</li>
+      <li><strong>Higher Secondary (12th)</strong> - Sri Ramakrishna Matric Higher Secondary School (2023, 84%)</li>
+    </ul>
+  </section>
+
+  <!-- Internship Section -->
+  <section id="internship">
+    <h2>Internship</h2>
+    <p><strong> Internship - TANSAM</strong> </p>
+    <p>Internship at TANSAM focusing on data collection, cleaning, and visualization tasks. Created dashboards using Excel and Python tools.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Mini Projects</h2>
+    <ul>
+      <li><strong>Stone Paper Scissors Game</strong> - A Python-based game demonstrating programming logic and conditional statements.</li>
+      <li><strong>Student Performance Dashboard</strong> - An interactive Dashboard using slicer,pivot tables to visualise the student performance.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: <a href="mailto:swethats2427@ksrce.ac.in">swethats2427@ksrce.ac.in</a> | LinkedIn: <a href="https://www.linkedin.com/in/swetha-thambidurai-226168292">linkedin.com/in/swetha</a></p>
+  </footer>
+</body>
+</html>
